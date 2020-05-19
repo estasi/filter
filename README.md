@@ -15,7 +15,7 @@ composer require estasi/filter
 - ext-intl
 - [Data Structures](https://github.com/php-ds/polyfill): 
     `composer require php-ds/php-ds`
-    <br><small><i>Polyfill is installed with the estasi/validator package.</i></small>
+    <br><small><i>Polyfill is installed with the estasi/filter package.</i></small>
 
 
 ## Usage
