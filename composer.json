@@ -1,0 +1,37 @@
+{
+    "name"             : "estasi/filter",
+    "description"      : "Filtering and normalizing data and files",
+    "keywords"         : [
+        "estasi",
+        "filter",
+        "psr",
+        "psr-4",
+        "psr-12"
+    ],
+    "minimum-stability": "stable",
+    "license"          : "BSD-3-Clause",
+    "authors"          : [
+        {
+            "name" : "Mikhail Erypalov",
+            "email": "mikaxxl@yandex.ru",
+            "role" : "developer"
+        }
+    ],
+    "config"           : {
+        "sort-packages"      : true,
+        "optimize-autoloader": true
+    },
+    "require"          : {
+        "php"                  : "^7.4",
+        "ext-mbstring"         : "*",
+        "ext-intl"             : "*",
+        "estasi/plugin-manager": "^1",
+        "estasi/utility"       : "^1",
+        "php-ds/php-ds"        : "dev-master"
+    },
+    "autoload"         : {
+        "psr-4": {
+            "Estasi\\Filter\\": "src/"
+        }
+    }
+}
