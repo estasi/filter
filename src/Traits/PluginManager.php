@@ -83,4 +83,15 @@ trait PluginManager
             new Plugin(UnitFormatter::class, ['unit', 'unit_formatter', 'unitFormatter', 'UnitFormatter'])
         );
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function getFilter(string $name, iterable $options = null): Filter
+    {
+        /** @var \Estasi\Filter\Interfaces\Filter $filter */
+        $filter = $this->build($name, $options);
+
+        return $filter;
+    }
 }

@@ -16,7 +16,7 @@ abstract class Trim extends Filter
     // names of constructor parameters to create via the factory
     public const OPT_CHARACTER_MASK = 'characterMask';
     // default values for constructor parameters
-    public const DEFAULT_CHARACTER_MASK = ' \t\n\r\0\x0B';
+    public const DEFAULT_CHARACTER_MASK = " \t\n\r\0\x0B";
 
     protected string $characterMask;
 
